@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sy.Forms.Auth;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace Sy.Forms
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            LoginForm frm = new LoginForm();
+            frm.ShowDialog();
+        }
+
+        private void btnKayıtOl_Click(object sender, EventArgs e)
+        {
+            RegisterForm frm = new RegisterForm();
+            frm.ShowDialog();
         }
     }
 }
